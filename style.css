@@ -1,29 +1,66 @@
-.tituloPrincipal {
-    padding-left: 20px;
+header {
+    background: #bbbbbb;
+    padding: 10px 0;
 }
-.principal {
-    background: #cccccc;
-    padding: 30px;
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000;
+    background-color: #C78C19;
+    border: 3px solid #C78C19;
+}
+
+nav a:active {
+    border: none;
+    font-size: 17px;
 }
 
 #banner {
-    width: 100%;
+    width: 100%;    
 }
 
 .tituloCentralizado {
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-p {
+.home p {
     text-align: center;
+    padding: 15px 15px;
 }
 
 #mission {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 em, strong {
-    color: #ff0000;
+    color: #C78C19;
 }
 
 .beneficios {
@@ -31,19 +68,137 @@ em, strong {
     padding: 20px;
 }
 
-ul {
+.beneficios ul {
     display: inline-block;
     vertical-align: top;
     width: 20%;
     margin-right: 15%;
-
 }
 
 .itens {
-    font-style: italic;
+    font-weight: bold;
 }
 
 .imagembeneficios {
     width: 50%;
 }
 
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border: transparent;
+}
+
+.produtos li:active h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(./images/bg.jpg);
+    margin: 40px 0 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin:10px 0 0;
+    padding-bottom: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 10px 0;
+    background: #C78C19;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s background;
+
+}
+
+.enviar:hover {
+    background: #fdb421;
+    transform: scale(1.1);
+}

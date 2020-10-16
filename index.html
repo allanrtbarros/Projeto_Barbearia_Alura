@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header class="tituloPrincipal">
-    <h1>Barbearia Alura</h1>
+    <div class="caixa">
+        <h1><img src="images/logo.png"></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+
     <img id="banner" src="images/banner.jpg" alt="Barbearia Alura">
 
-    <div class="principal">
+    <div class="home">
         
-
-        <h2 class="tituloCentralizado"> Sobre a Barbearia Alura </h2>
+        <h1 class="tituloCentralizado"> Sobre a Barbearia Alura </h1>
 
         <p> Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia. </p>
 
         <p id="mission"><em> Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>. </em></p>
 
         <p> profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes. </p>
+    
+
+        <div class="beneficios">
+            <ul>
+                <li class="itens"><h1 class="tituloCentralizado"> Beneficios </h1></li>
+                <li class="itens">Atendeimento ao Cliente</li>
+                <li class="itens">Espaço Personalizado</li>
+                <li class="itens">Localização</li>
+                <li class="itens">Profissionais de Qualidade</li>
+            </ul>
+
+            <img class="imagembeneficios" src="images/beneficios.jpg">
+
+        </div>
     </div>
 
-    <div class="beneficios">
-        <h2 class="tituloCentralizado"> Beneficios </h2>
-        <ul>
-            <li class="itens">Atendeimento ao Cliente</li>
-            <li class="itens">Espaço Personalizado</li>
-            <li class="itens">Localização</li>
-            <li class="itens">Profissionais de Qualidade</li>
-        </ul>
-
-        <img class="imagembeneficios" src="images/beneficios.jpg" alt="beneficios">
-    </div>
+    <footer>
+        <img src="./images/logo-branco.png" alt="imagem rodape">
+        <p class="copyright"> &copy; Copyrigth Barbearia Alura - 2020</p>
+    </footer>
 
 </body>
 </html>
