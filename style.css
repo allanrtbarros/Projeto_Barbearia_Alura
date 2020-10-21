@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #bbbbbb;
     padding: 10px 0;
@@ -39,49 +43,98 @@ nav a:active {
     font-size: 17px;
 }
 
-#banner {
+/* Pagina Principal */
+
+.banner {
     width: 100%;    
 }
 
-.tituloCentralizado {
+.sobreAlura {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.tituloPrincipal {
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.sobreAlura p {
+    margin: 0 0 1em;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.sobreAlura strong {
     font-weight: bold;
-    text-decoration: underline;
 }
 
-.home p {
+.sobreAlura em {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
     text-align: center;
-    padding: 15px 15px;
-}
-
-#mission {
-    font-size: 25px;
-}
-
-em, strong {
-    color: #C78C19;
 }
 
 .beneficios {
-    background: #ffffff;
-    padding: 20px;
+    padding: 3em 0;
+    background: #888888;
+    
 }
 
-.beneficios ul {
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
     display: inline-block;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
 }
 
 .itens {
-    font-weight: bold;
+    line-height: 1.5;
 }
 
+.itens:first-child {
+    font-weight: bold;
+    }
+
+.itens:before {
+    content: " ✄ ";
+}    
+
 .imagembeneficios {
-    width: 50%;
+    width: 60%;
 }
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/* Pagina Produtos */
 
 .produtos {
     width: 940px;
@@ -130,10 +183,11 @@ em, strong {
     margin-top: 10px;
 }
 
+/* estilização padrão do rodapé */
+
 footer {
     text-align: center;
     background: url(./images/bg.jpg);
-    margin: 40px 0 0;
 }
 
 .copyright {
@@ -144,8 +198,7 @@ footer {
 }
 
 main {
-    width: 940px;
-    margin: 0 auto;
+    
 }
 
 form {
@@ -201,4 +254,22 @@ td, th {
 .enviar:hover {
     background: #fdb421;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .sobreAlura, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagembeneficios {
+        width: 100%;
+    }
 }
