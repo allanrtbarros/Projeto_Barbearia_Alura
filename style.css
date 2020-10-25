@@ -197,10 +197,6 @@ footer {
     padding-bottom: 20px;
 }
 
-main {
-    
-}
-
 form {
     margin: 40px 0;
 }
@@ -265,8 +261,12 @@ td, th {
         text-align: center;
     }
 
-    nav {
+    nav {  
         position: static;
+    }
+
+    nav li {
+        margin: 0 0 0 10px;
     }
 
     .lista-beneficios, .imagembeneficios {
